@@ -14,12 +14,12 @@
 ### Шаги
 1. Склонировать проект 'git clone git@github.com:AnastasiiaS1990/final_proj_chit_gorod.git'
 2. Установить зависимости
-3. Пройти авторизацию по номеру телефона на сайте [Читай город](https://www.chitai-gorod.ru)
+3. Добавить в переменную "phone_number" в файле /authPage.py номер телефона РФ, в формате "без цифр 8 и 9"
 4. Получить токен меняется каждый час (dev tools-application-cookie-"access-token"-"Bearer токен")
-5. Добавить токен в переменную token
-3. Запустить тесты 'pytest' команда: pytest -s -v
-4. Сгенерировать отчет 'allure generate allure-files -o allure-report'
-5. Открыть отчет 'allure open allure-report'
+5. Добавить токен в переменную token в pages/conftest.py
+6. Запустить тесты 'pytest' команда: pytest -s -v
+7. Сгенерировать отчет 'allure generate allure-files -o allure-report'
+8. Открыть отчет 'allure open allure-report'  -  allure serve allure-result
 
 ### Структура:
 - ./test - тесты
